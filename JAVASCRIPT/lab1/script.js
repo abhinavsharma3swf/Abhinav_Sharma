@@ -33,7 +33,7 @@ function simpleInterestCalculator(principalAmount, rate, time) {
 
 // Favorite Color Selector
 
-let color = ["Red", "Blue", "White"];
+/*let color = ["Red", "Blue", "White"];
 //let newString = addColor();
 color.push(addColor());
 window.alert(color);
@@ -42,15 +42,20 @@ function addColor() {
 
     let addValue= prompt( "Enter a color you want to add:->" );
     let temp = Number(addValue);
-    if (Number(addValue) != NaN){
-        throw "You entered a number";
-
+    if (!isNaN(Number(addValue))){
+        window.alert( "You entered a number");
+       // break;
     }
 
     return addValue;
+}*/
+
+let age = 18;
+if (age%2===0){
+    console.log("You are an even");
+} else{
+    console.log("You are an odd");
 }
-
-
 
 
 
