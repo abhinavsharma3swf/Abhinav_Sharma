@@ -13,7 +13,7 @@ function calculateAge(birthyear) {
 
 // Simple Interest calculator
 
-let principalAmount = prompt ("Enter the principal amount");
+/*let principalAmount = prompt ("Enter the principal amount");
 let rate = prompt(" Enter the rate of interest");
 let time = prompt("Enter the years");
 
@@ -29,7 +29,27 @@ function simpleInterestCalculator(principalAmount, rate, time) {
         let total = (principalAmount * rate * time) / 100;
         return total;
     }
+}*/
+
+// Favorite Color Selector
+
+let color = ["Red", "Blue", "White"];
+//let newString = addColor();
+color.push(addColor());
+window.alert(color);
+
+function addColor() {
+
+    let addValue= prompt( "Enter a color you want to add:->" );
+    let temp = Number(addValue);
+    if (Number(addValue) != NaN){
+        throw "You entered a number";
+
+    }
+
+    return addValue;
 }
+
 
 
 
