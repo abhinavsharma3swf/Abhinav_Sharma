@@ -90,4 +90,18 @@ numbers.sort(function(a,b){
 console.log(numbers);
 
 
+//Date
+const d = new Date();
+let day = d.getDay();
+let month = d.getMonth();
+let time = d.getHours()
+let min = d.getMinutes()
+let daysoftheweek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+console.log(`Today is: ${daysoftheweek[day]} ${time}hr : ${min}min `);
+
+
+
+
+
+
 
