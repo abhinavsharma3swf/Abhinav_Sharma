@@ -1,0 +1,19 @@
+body {
+    background-color: red;
+}
+
+.henny-penny-regular {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.butterfly-kids-regular {
+    font-family: "Butterfly Kids", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.red{
+    color: yellow;
+}

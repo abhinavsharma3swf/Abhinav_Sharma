@@ -1,0 +1,35 @@
+.div1 {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: relative;
+    top: 200px;
+    margin: auto;
+    /*position: relative;*/
+    /*left: 100px;*/
+
+}
+
+.div2{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: running(left);
+    z-index: 2;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: grey;
+    position: relative;
+}
+
+.innerdiv {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    bottom: 3px;
+    overflow: scroll;
+}

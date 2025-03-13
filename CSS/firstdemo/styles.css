@@ -1,0 +1,70 @@
+/*body{*/
+/*    background-color: #a9b784;*/
+/*}*/
+/*#burger{*/
+/*    color:orange;*/
+/*}*/
+/*#onion{*/
+/*    color: red;*/
+/*}*/
+/*#fries {*/
+/*    color: yellow;*/
+/*}*/
+/*.strawberry{*/
+/*    background-color: red;  !*block element that's why its taking as much space as available. *!*/
+/*}*/
+/*.blueberry{*/
+/*    background-color: blue;*/
+/*}*/
+*{                              /*Removing the browser default formating*/
+    margin:0;
+    padding: 0;
+    border: none;
+}
+/*p {*/
+/*    background-color: #5858a4;*/
+/*    padding: 10px;*/
+/*    margin: 10px;*/
+/*    !*border-style: groove;*!*/
+/*    !*border-color: aqua;*!*/
+/*    !*border-width: 5px;*!*/
+/*    !* another way to write the border with the shortcut statement*!*/
+/*    border: groove red 15px;*/
+/*}*/
+
+/*li a{*/
+/*    color: green;*/
+/*}*/
+
+body {
+    color: green;
+}
+ul{
+    color: purple;
+}
+li{
+    color: orange;
+}
+.company{
+    color: red !important;
+    text-shadow: green 3px 3px 5px;
+}
+
+/*any elements with both company and red classes*/
+.company.red{
+
+}
+
+/*all elements with class red INSIDE of elements with company class */
+.company .red{
+
+}
+
+/*all elements with class red AND company class*/
+.company,.red{
+
+}
+
+.company{
+    color:green;
+}

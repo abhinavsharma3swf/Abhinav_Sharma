@@ -1,0 +1,10 @@
+body{
+    background-color :green;
+}
+h1:hover {
+    background-color: purple;
+}
+button:hover{
+    color:red;
+    cursor: grab;
+}
