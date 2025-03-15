@@ -1,0 +1,48 @@
+*{
+    margini: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #86e186;
+    background-image: url("../Week3Lab/Assest/dogbackground.jpg");
+    background-size: cover;
+    background-position: center center ;
+}
+
+.button{
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prev, .next{
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    border: aliceblue;
+    border-radius: 10px;
+    background-color: #197d91;
+}
+
+.prev:hover, .next:hover, .btn-primary:hover{
+    background-color: red;
+    color: white;
+}
+
+h1, .dropdown{
+    font-family: "Henny Penny", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    color: #e10c0c;
+}
+
+.img {
+    border: #e10c0c 2000px;
+}
+
+
+
+
+
