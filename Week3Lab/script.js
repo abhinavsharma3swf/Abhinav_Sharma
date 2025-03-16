@@ -3,7 +3,6 @@ const urlEnd = "/images/random";
 let route = "s/image/random"
 
 let imgArr=[];
-//let index=0;
 const maxlength=10;
 let currentImage = 0;
 
@@ -59,6 +58,7 @@ function showPrev() {
         let img = document.querySelector("img");
         img.src = imgArr[currentImage];  // Update the image source
         updateNavigationInfo();
+        currentImage--;
           // Decrement the index to show the previous image
     } else {
         let img = document.querySelector("img");
@@ -66,8 +66,7 @@ function showPrev() {
         updateNavigationInfo();
         currentImage = imgArr.length - 1;  // If at the start, loop to the last image
     }
-    currentImage--;
-     // Update the navigation info
+
 }
 
 // Function to show the next image
@@ -82,6 +81,7 @@ function showNext() {
     updateNavigationInfo();  // Update the navigation info
 }
 
-// Add event listeners for the Previous and Next buttons
-document.querySelector(".prev").addEventListener("click", showPrev);
-document.querySelector(".next").addEventListener("click", showNext);
+function play() {
+    const sound = document.getElementById("audio");
+    sound.play()
+}
