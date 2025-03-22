@@ -38,43 +38,63 @@ document.getElementById('btn_submit').addEventListener('click', (e)=> {
     e.preventDefault()
 
     const name = document.getElementById('fname').value;
+    const lname = document.getElementById('lname').value;
+    const address = document.getElementById('address').value;
+    const address1 = document.getElementById('address1').value;
+    const city = document.getElementById('city').value;
+    const state = document.getElementById('state').value;
+    const zipcode = document.getElementById('zipcode').value;
+    const tellme = document.getElementById('text').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const age = document.getElementById('age').value;
 
+    const marital = document.getElementById('radios').value;
+    let mar_value;
+    if( marital === 'yes') {
+        mar_value = document.getElementById('rd1').value;
+    } else {
+        mar_value = document.getElementById('rd2').value;
+    }
+
+
+
+
     let isValid = true;
 
-    document.getElementById("fname-error").innerText = "First name must be entered and 1-30 letters.";
-    document.getElementById("email-error").textContent = "Please enter a valid email";
-    document.getElementById("phone-error").textContent = "Please enter a phone number in 111-111-1111 format";
-    document.getElementById("age-error").textContent = " Age must be in between 21-99";
+    document.getElementById("fname-error").innerText = "";
+    document.getElementById("email-error").textContent = "";
+    document.getElementById("phone-error").textContent = "";
+    document.getElementById("age-error").textContent = "";
 
     const nameRegex = /^[a-zA-Z]{1,30}$/;
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-    const numberRegex = /\b([0-9]|10)\b$/;
+    const numberRegex = /[0-9]$/;
 
     if (!nameRegex.test(name)) {
-        document.getElementById("fname-error").textContent = "";
+        document.getElementById("fname-error").innerText = "First name must be entered and 1-30 letters.";
         isValid = false;
     }
 
     if (!emailRegex.test(email)) {
-        document.getElementById("email-error").textContent = "";
+        document.getElementById("email-error").innerText = "Please enter a valid email";
         isValid = false;
     }
 
-    if (!numberRegex.test(age)) {
-        document.getElementById("age-error").textContent = "";
+    if (age <21 || age > 99) {
+        document.getElementById("age-error").innerText = "Age must be in between 21-99";
         isValid = false;
     }
 
     if (!numberRegex.test(phone)) {
-        document.getElementById("phone-error").textContent = "";
+        document.getElementById("phone-error").innerText = "Please enter a phone number in 111-111-1111 format";
         isValid = false;
     }
 
     if (isValid) {
         alert("Form Submitted Successfully");
+        let formdata = {name,lname,address,address1,city,state,zipcode,email,phone,age,mar_value,tellme}
+        console.log(formdata);
     }
 
 });

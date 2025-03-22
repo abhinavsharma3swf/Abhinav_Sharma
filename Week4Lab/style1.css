@@ -1,0 +1,142 @@
+body,
+input[type="date"] {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+    sans-serif;
+    font-weight: 300;
+}
+
+.input {
+    background-color: #a2cce7;
+    margin: auto;
+    padding: 7px;
+    max-width: 700px;
+    border-radius: 8px;
+    height: auto;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+/*label[for="name"],*/
+/*label[for="email"],*/
+/*label[for="password"],*/
+/*label[for="radio-yes"],*/
+/*label[for="radio-no"],*/
+/*label[for="radio-maybe"] {*/
+/*    display: inline-block;*/
+/*}*/
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    background-color: #fff;
+    color: #444;
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: inherit;
+    margin-bottom: 30px;
+}
+
+/*input:focus,*/
+/*textarea:focus,*/
+/*select:focus {*/
+/*    outline: 3px solid rgba(26, 156, 188, 0.4);*/
+/*}*/
+
+input[type="text"],
+input[type="email"] {
+    width: 49.5%;
+}
+
+/*select {*/
+/*    height: 35px;*/
+/*}*/
+
+/*span {*/
+/*    display: inline-block;*/
+/*    background-color: #1a9cbc;*/
+/*    color: #fff;*/
+/*    height: 30px;*/
+/*    width: 30px;*/
+/*    font-size: 0.8em;*/
+/*    margin-right: 5px;*/
+/*    line-height: 30px;*/
+/*    text-align: center;*/
+/*    border-radius: 15px 15px 15px 0px;*/
+/*}*/
+
+/*input[type="radio"] {*/
+/*    margin-bottom: 25px;*/
+/*    outline: none;*/
+/*}*/
+
+/*input[type="checkbox"] {*/
+/*    outline: none;*/
+/*}*/
+
+/*input[type="submit"] {*/
+/*    background-color: #1a9cbc;*/
+/*    color: #fff;*/
+/*    padding: 15px 25px;*/
+/*    border-radius: 7px;*/
+/*    font-size: 18px;*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*    margin-bottom: 25px;*/
+/*}*/
+
+/*input[type="submit"]:hover {*/
+/*    background-color: #14829e;*/
+/*    cursor: pointer;*/
+/*}*/
+
+#form {
+    width: 100%;
+    margin-top: 5%;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px
+}
+
+#form button {
+    padding: 10px;
+    width: 100%;
+    background-color: cornflowerblue;
+    font-size: large;
+}
+
+#form button:hover {
+    background-color: green;
+    color: rgba(17, 1, 1, 0.8);
+}
+
+.input {
+    border: 2px solid #f0f0f0;
+    border-radius: 2px;
+    display: block;
+    font-size: 15px;
+}
+
+.input input:focus{
+    outline: 0;
+}
+
+input.error input {
+    border-color: red;
+    height: 5px;
+    width: 10px;
+}
+
+.alert {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
