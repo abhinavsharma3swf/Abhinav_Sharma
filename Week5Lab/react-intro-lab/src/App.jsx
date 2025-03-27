@@ -11,7 +11,7 @@ const App = () => {
         ];
 
     const SortAge = (newcards) => {
-        return newcards.sort((a,b) => a.age - b.age);
+        return newcards.sort((a,b) => b.age - a.age);
 
     }
     // const sortedCards = SortAge(cards);
