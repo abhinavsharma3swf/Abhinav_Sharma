@@ -1,10 +1,18 @@
 .text {
-  text-align: center;
   padding: 1rem 1rem;
   margin: 2rem;
-  border: #e4e5ef 4px solid;
-  opacity: 1;
+  border: #1f30d2 4px solid;
+
 }
+
+.inside {
+    text-align: center;
+    /*padding: 1rem 1rem;*/
+    /*margin: 2rem;*/
+    /*border: #1f30d2 4px solid;*/
+  color: #8d0505;
+  }
+
 
 .App {
   height: 600px;
@@ -20,14 +28,15 @@
 
 
 
-.text {
+.text{
+  background-color: rgba(255, 255, 255, 0.42);
   background-image: url('./assets/background.jpg');
   width: auto;
   height: 8rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-blend-mode: luminosity;
+  background-blend-mode:lighten;
   color: #50e3de;
 }
 
@@ -41,18 +50,4 @@
   color: #da1c1c;
   border: 2px Solid black;
   margin-top: 8px;
-}
-
-
-@keyframes shake {
-  0% { transform: rotate(0deg) translate(0, 0); }
-  20% { transform: rotate(-10deg) translate(-2px, 2px); }
-  40% { transform: rotate(10deg) translate(2px, -2px); }
-  60% { transform: rotate(-10deg) translate(-2px, 2px); }
-  80% { transform: rotate(10deg) translate(2px, -2px); }
-  100% { transform: rotate(0deg) translate(0, 0); }
-}
-
-.shake {
-  animation: shake 0.6s ease-in-out;
 }

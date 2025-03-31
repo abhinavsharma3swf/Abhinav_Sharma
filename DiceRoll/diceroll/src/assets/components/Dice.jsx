@@ -1,5 +1,5 @@
 import {diceIcons} from "../helper.js";
-import {faTableCellsColumnLock} from "@fortawesome/free-solid-svg-icons";
+
 
 export const Dice = ({number}) => {
     const icon = diceIcons[number];
