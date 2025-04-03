@@ -7,7 +7,7 @@ if(!data)
 return (
         <div className="App">
 
-            <table>
+            <table  className="table" style={{border: "5px, solid red"}}>
                 <thead>
                 <tr>
                     <th>Name</th>
