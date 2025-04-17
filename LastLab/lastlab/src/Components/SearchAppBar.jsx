@@ -82,7 +82,6 @@ export default function SearchAppBar() {
                         noWrap
                         color="white"
                         size="large"
-                        Ba
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >

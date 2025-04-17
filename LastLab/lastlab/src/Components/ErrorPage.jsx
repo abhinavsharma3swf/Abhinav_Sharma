@@ -7,7 +7,7 @@ import theme from "./Ui/Theme.jsx";
 export const ErrorPage = ({error}) => {
 
     if(error === 'noResult')
-        return <div style={theme} align={'center'} className='noResult'>
+        return <div align={'center'} className='noResult'>
             <img src={noResult} alt="no Result"/>
         </div>
 

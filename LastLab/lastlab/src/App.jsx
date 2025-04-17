@@ -4,10 +4,11 @@ import { useEffect, useState} from "react";
 
 import axios from "axios";
 import {Results} from "./Components/Results.jsx";
-import {Box, Button, Typography} from "@mui/material";
+import {Box, Button, ThemeProvider, Typography} from "@mui/material";
 import cinema from "./Components/cinema.webp";
 import {ErrorPage} from "./Components/ErrorPage.jsx";
 import SearchContext from "./Components/SearchContext.js";
+import theme from "./Components/Ui/Theme.jsx";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
             params: { query: searchTerm, language: 'en-US', page: '1'},
             headers: {
                 accept: 'application/json',
-                Authorization: `Bearer${VITE_TMDB_API_TOKEN}`
+                Authorization: `Bearer${process.env.VITE_TMDB_API_TOKEN}`
             }
         };
 
@@ -55,7 +56,7 @@ function App() {
             params: {language: 'en-US', page: '1'},
             headers: {
                 accept: 'application/json',
-                Authorization: `Bearer${VITE_TMDB_API_TOKEN}`
+                Authorization: `Bearer${process.env.VITE_TMDB_API_TOKEN}`
             }
         };
 
@@ -103,8 +104,9 @@ function App() {
 
 
     return (
+        <ThemeProvider theme={theme}>
         <SearchContext.Provider value={{searchTerm, setSearchTerm}}>
-            <theme></theme>
+
             <Router>
 
                 <SearchAppBar>
@@ -123,6 +125,7 @@ function App() {
 
 
         </SearchContext.Provider>
+        </ThemeProvider>
     )
 }
 
